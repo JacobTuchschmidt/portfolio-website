@@ -40,9 +40,9 @@ export default function Home() {
             </header>
             <main>
                 <section id="hero" className="min-h-screen flex items-center justify-center">
-                    <div>
+                    <div className="max-w-8xl mx-auto px-6">
                         <h1
-                            className={`uppercase text-[clamp(4rem,12vw,12rem)] font-black tracking-tighter leading-none bg-cover bg-center bg-no-repeat text-transparent transition-all duration-200 ${scrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
+                            className={`uppercase text-[clamp(4rem,8vw,8rem)] font-black tracking-tighter leading-none bg-cover bg-center bg-no-repeat text-transparent transition-all duration-200 ${scrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
                                 }`}
                             style={{
                                 backgroundImage: "url('/images/RobotArm.jpg')",
@@ -63,10 +63,27 @@ export default function Home() {
                 </section>
 
                 <section
-                    id="about-me"
-                    className="min-h-screen flex items-center justify-center"
+                    id="about-me" className="py-32"
                 >
-                    Welcome, I am an early career mechanical engineer with a passion for design
+                    <div className="max-w-4xl mx-auto px-6">
+                        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                            Welcome!
+                        </h2>
+
+                        <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+                            This portfolio is an introduction to my
+                        </p>
+
+                        <ul className="mt-10 space-y-2 text-xl font-medium">
+                            <li>My Work</li>
+                            <li>My Passions</li>
+                            <li>My Growth</li>
+                        </ul>
+
+                        <p className="mt-10 text-lg text-gray-300 leading-relaxed">
+                            I’m a mechanical engineer in the early stages of building a career driven by passion and purpose in mechanical design.
+                        </p>
+                    </div>
                 </section>
 
                 <section id="projects-timeline">
