@@ -10,7 +10,7 @@ Growth
 
 So—who am I, and what’s my background?
 
-I’m a young mechanical engineer in the early stages of building a career driven by passion and purpose in mechanical design.
+I’m a mechanical engineer in the early stages of building a career driven by passion and purpose in mechanical design.
 
 In 2022, I graduated from Missouri University of Science and Technology with a Bachelor of Science in Mechanical Engineering, and an emphasis in Mechanical Design and Analysis.
 
