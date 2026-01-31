@@ -23,26 +23,27 @@ export default function Home() {
                     }`}
             >
                 <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-6">
-                    <span className="font-semibold tracking-wide">
+                    <span
+                        className={`font-semibold tracking-wide transition-all duration-500 ${scrolled ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                            }`}
+                    >
                         JT
                     </span>
 
-                    <nav className="space-x-6 text-sm uppercase tracking-wider">
+                    <nav className={`space-x-6 text-sm uppercase tracking-wider transition-all duration-500 ${scrolled ? "opacity-100 scale-100" : "opacity-0 scale-75"
+                        }`}
+                    >
                         <a href="#hero" className="opacity-80 hover:opacity-100">Home</a>
                         <a href="#about-me" className="opacity-80 hover:opacity-100">About</a>
                     </nav>
                 </div>
-                {/* <h1>Jacob Tuchschmidt's Portfolio</h1>
-                <nav>
-                    <a href="#hero">Home</a>
-                    <a href="#about-me">About</a>
-                </nav> */}
             </header>
             <main>
                 <section id="hero" className="min-h-screen flex items-center justify-center">
                     <div>
                         <h1
-                            className="uppercase text-[clamp(4rem,12vw,12rem)] font-black tracking-tighter leading-none bg-cover bg-center bg-no-repeat text-transparent"
+                            className={`uppercase text-[clamp(4rem,12vw,12rem)] font-black tracking-tighter leading-none bg-cover bg-center bg-no-repeat text-transparent transition-all duration-200 ${scrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
+                                }`}
                             style={{
                                 backgroundImage: "url('/images/RobotArm.jpg')",
                                 WebkitBackgroundClip: "text",
@@ -53,7 +54,9 @@ export default function Home() {
                         >
                             Jacob Tuchschmidt
                         </h1>
-                        <p className="mt-4 text-lg md:text-2xl text-gray-300 font-light">
+                        <p className={`mt-4 text-lg md:text-2xl text-gray-300 font-light" transition-all duration-200 ${scrolled ? "opacity-0 scale-95" : "opacity-100 scale-100"
+                            }`}
+                        >
                             Mechanical Engineering Portfolio
                         </p>
                     </div>
